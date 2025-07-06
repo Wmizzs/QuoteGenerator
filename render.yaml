@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: random-quote-api
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    plan: free

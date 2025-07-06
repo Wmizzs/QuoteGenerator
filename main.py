@@ -17,8 +17,7 @@ quotes = [
 ]
 
 @app.route("/")
-def home():
-    quote = random.choice(quotes)
+def quote():
     return f"""
     <html>
       <head>
@@ -26,9 +25,9 @@ def home():
         <title>Random Quote</title>
         <style>
           body {{
-            font-family: system-ui, sans-serif;
+            font-family: sans-serif;
             text-align: center;
-            padding-top: 20%;
+            padding-top: 10px;  /* text near the top */
             font-size: 1.5rem;
             color: #333;
             background: #f9f9f9;
@@ -36,10 +35,11 @@ def home():
         </style>
       </head>
       <body>
-        “{quote}”
+        “{random.choice(quotes)}”
       </body>
     </html>
     """
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)

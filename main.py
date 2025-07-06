@@ -27,10 +27,10 @@ def quote():
           body {{
             font-family: sans-serif;
             text-align: center;
-            padding-top: 10px;  /* text near the top */
+            padding-top: 10px;
             font-size: 1.5rem;
             color: #333;
-            background: #f9f9f9;
+            background: transparent;
           }}
         </style>
       </head>
@@ -39,6 +39,7 @@ def quote():
       </body>
     </html>
     """
+
 
 
 if __name__ == "__main__":
